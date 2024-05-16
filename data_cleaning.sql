@@ -72,16 +72,16 @@ Order By 2
 Select SoldAsVacant,
 CASE
     WHEN SoldAsVacant = 'Y' THEN 'Yes'
-	WHEN SoldAsVacant= 'N' THEN 'No'
-	ELSE SoldAsVacant 
+    WHEN SoldAsVacant= 'N' THEN 'No'
+    ELSE SoldAsVacant 
 END
 From dataProject..NashvileHousing
 
 Update  NashvileHousing
 SET SoldAsVacant = CASE
     WHEN SoldAsVacant = 'Y' THEN 'Yes'
-	WHEN SoldAsVacant= 'N' THEN 'No'
-	ELSE SoldAsVacant 
+    WHEN SoldAsVacant= 'N' THEN 'No'
+    ELSE SoldAsVacant 
 END
 From dataProject..NashvileHousing
 
