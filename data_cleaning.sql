@@ -1,4 +1,4 @@
---populate property address data
+--Populate property address data
 select propertyA.ParcelID , propertyA.PropertyAddress, propertyB.ParcelID,propertyB.PropertyAddress, ISNULL(propertyA.PropertyAddress,propertyB.PropertyAddress)
 from dataProject..NashvileHousing AS propertyA
 JOIN dataProject..NashvileHousing AS propertyB
@@ -97,7 +97,7 @@ Where rowNumber > 1
 
 
 
-----standardize date format
+----Standardize date format
 
 Select SaleDate , CONVERT(date, saleDate)
 From dataProject..NashvileHousing
